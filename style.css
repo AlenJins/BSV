@@ -1,0 +1,137 @@
+body {
+  background: #f6f8f7;
+  font-family: 'Montserrat', Arial, sans-serif;
+  margin: 0;
+  color: #3a4067;
+}
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 32px;
+  box-shadow: 0 4px 32px rgba(58, 64, 103, 0.08);
+  padding: 32px 24px 40px 24px;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.logo {
+  width: 180px;
+  margin-bottom: 12px;
+}
+.header-content {
+  text-align: center;
+}
+.header h1 {
+  color: #3a4067;
+  font-size: 2.2rem;
+  margin: 0 0 8px 0;
+  letter-spacing: 2px;
+}
+.subtitle {
+  color: #6b7199;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 8px;
+}
+.nav a {
+  text-decoration: none;
+  color: #3a4067;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.nav a.active, .nav a:hover {
+  color: #ff9900;
+}
+.gallery-section {
+  margin: 32px 0 24px 0;
+}
+.gallery-section h2 {
+  color: #3a4067;
+  font-size: 1.5rem;
+  margin-bottom: 18px;
+  text-align: center;
+}
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.gallery-image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f8f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(58, 64, 103, 0.06);
+  padding: 18px 24px 12px 24px;
+  min-width: 320px;
+  max-width: 420px;
+}
+.gallery-image-container img {
+  max-width: 350px;
+  max-height: 320px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(58, 64, 103, 0.10);
+}
+.gallery-btn {
+  background: #fff;
+  border: 2px solid #ff9900;
+  color: #ff9900;
+  font-size: 2rem;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gallery-btn:hover {
+  background: #ff9900;
+  color: #fff;
+}
+.caption {
+  color: #3a4067;
+  font-size: 1rem;
+  margin-top: 6px;
+  min-height: 24px;
+  text-align: center;
+}
+.placeholder-section {
+  margin-top: 48px;
+  text-align: center;
+  color: #6b7199;
+  font-size: 1.2rem;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 10px 2px 20px 2px;
+  }
+  .gallery-image-container {
+    min-width: 0;
+    max-width: 98vw;
+    padding: 8px 2px 8px 2px;
+  }
+  .gallery-section h2 {
+    font-size: 1.1rem;
+  }
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .logo {
+    width: 120px;
+  }
+} 
