@@ -203,6 +203,7 @@ body {
   min-width: 540px;
   max-width: 700px;
   width: 100%;
+  transition: opacity 0.5s ease-in-out;
 }
 .testimonial-image-container {
   flex: 1 1 220px;
@@ -272,4 +273,22 @@ body {
   .testimonial-content {
     padding: 18px 10px 12px 10px;
   }
+}
+.slide-out-left {
+  transform: translateX(-100%);
+}
+.slide-in-right {
+  transform: translateX(100%);
+}
+.slide-out-right {
+  transform: translateX(100%);
+}
+.slide-in-left {
+  transform: translateX(-100%);
+}
+.fade-out {
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
 } 

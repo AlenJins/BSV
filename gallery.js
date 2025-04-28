@@ -124,14 +124,28 @@ function scheduleAutoScroll() {
   }
 }
 
+function animateFade(nextIdx) {
+  testimonialCard.classList.add('fade-out');
+  setTimeout(() => {
+    testimonialCard.classList.remove('fade-out');
+    showPhoto(nextIdx);
+    testimonialCard.classList.add('fade-in');
+    setTimeout(() => {
+      testimonialCard.classList.remove('fade-in');
+    }, 500); // match CSS duration
+  }, 500); // match CSS duration
+}
+
 function nextPhoto() {
-  current = (current + 1) % photos.length;
-  showPhoto(current);
+  const nextIdx = (current + 1) % photos.length;
+  animateFade(nextIdx);
+  current = nextIdx;
   scheduleAutoScroll();
 }
 function prevPhoto() {
-  current = (current - 1 + photos.length) % photos.length;
-  showPhoto(current);
+  const prevIdx = (current - 1 + photos.length) % photos.length;
+  animateFade(prevIdx);
+  current = prevIdx;
   scheduleAutoScroll();
 }
 
