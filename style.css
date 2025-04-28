@@ -18,6 +18,14 @@ body {
   align-items: center;
   margin-bottom: 32px;
 }
+.wip-badge {
+  background: #ff9900;
+  color: #fff;
+  padding: 8px 12px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  border-radius: 12px;
+}
 .logo {
   width: 180px;
   margin-bottom: 12px;
