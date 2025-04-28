@@ -134,4 +134,34 @@ body {
   .logo {
     width: 120px;
   }
+}
+.about-section, .why-volunteer-section, .how-it-helps-section, .program-structure-section, .signup-section {
+  margin: 32px 0 24px 0;
+  background: #f6f8f7;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(58, 64, 103, 0.06);
+  padding: 24px 20px 18px 20px;
+}
+.about-section h2, .why-volunteer-section h2, .how-it-helps-section h2, .program-structure-section h2, .signup-section h2 {
+  color: #3a4067;
+  font-size: 1.3rem;
+  margin-bottom: 12px;
+  text-align: left;
+}
+.why-volunteer-section ul, .how-it-helps-section ul, .program-structure-section ul {
+  padding-left: 20px;
+  margin: 0;
+}
+.why-volunteer-section li, .how-it-helps-section li, .program-structure-section li {
+  margin-bottom: 10px;
+  font-size: 1.05rem;
+  color: #3a4067;
+}
+.signup-section a {
+  color: #ff9900;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.signup-section a:hover {
+  color: #3a4067;
 } 
